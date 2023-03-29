@@ -49,16 +49,20 @@ a {
   overflow: hidden;
 }
 /* ----------------header-------------- */
-.header {
-  position: relative;
+.fixed-header {
+  position: sticky;
+  top: -26px;
   background: #e6f0ff;
-  height: 100vh;
+  padding-top: 26px;
+  background: #e6f0ff;
+
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
 }
 
 .navbar .navigation {
@@ -96,7 +100,10 @@ a {
 
 /* hero */
 .hero {
-  margin-top: 130px;
+  position: relative;
+  padding-top: 80px;
+  background: #e6f0ff;
+  height: calc(100vh - 90px);
 }
 
 .hero .info {
