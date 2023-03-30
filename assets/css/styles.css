@@ -107,7 +107,10 @@ a {
 /* hero */
 .hero {
   position: relative;
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #e6f0ff;
   height: calc(100vh - 90px);
 }
